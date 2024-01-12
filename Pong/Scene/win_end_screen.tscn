@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://cogukisqhmudk"]
+
+[ext_resource type="Script" path="res://Scene/win_end_screen.gd" id="1_rnvs7"]
+
+[node name="WinEndScreen" type="CanvasLayer"]
+script = ExtResource("1_rnvs7")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 66
+text = "Ready To Play Pong?
+"
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = -1
+anchor_top = 0.22
+anchor_bottom = 0.325
+offset_left = 254.0
+offset_top = 95.0
+offset_right = 898.0
+offset_bottom = 126.0
+
+[node name="Button" type="Button" parent="CenterContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 101
+text = "Play
+"
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -20.0
+offset_right = 31.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer2"]
+layout_mode = 2
+text = "Dummy
+"
